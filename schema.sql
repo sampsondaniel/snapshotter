@@ -34,6 +34,10 @@ create table blacklist (
     created_at datetime not null default CURRENT_TIMESTAMP
 );
 
+CREATE TABLE epoch_summary (
+    epoch_no INT NOT NULL PRIMARY KEY,
+    total_amount DOUBLE PRECISION NULL
+);
 --
 -- Data
 --
@@ -53,6 +57,8 @@ insert into pool (`ticker`, `name`, `bech32`, `created_at`) values ('SANTO','San
 insert into pool (`ticker`, `name`, `bech32`, `created_at`) values ('VFS','VFLAME','pool1vqjyjsp6dawkj8tzmfpu39hvgnkph99qzarw4dll6yq76gpaa4d','2023-11-24 12:00:00');
 insert into pool (`ticker`, `name`, `bech32`, `created_at`) values ('CARDS','Cardanistas','pool1jt7d6ak3m8gnjyxtuxfswe258xzwda80ndl0a57vv5m2zv8h6at','2023-11-24 12:00:00');
 insert into pool (`ticker`, `name`, `bech32`, `created_at`) values ('BBHMM','BBHMM','pool10p6wd9k0fwk2zqkqnqr8efyr7gms627ujk9dxgk6majskhawr6r','2023-11-24 12:00:00');
-insert into pool (`ticker`, `name`, `bech32`, `created_at`) values ('MTERA','MeteraProtocol ISPO','pool1uct8k7ruvu3dgl9hws4pj3tk9stzpls4evnys4r8q5vj2p9w92w','2023-11-24 12:00:00');
 
-insert into blacklist (`stake_address`, `reason`, `created_at`) values ('stake1uyty3f2syg0tg5l0q7ufjtcj4g4d9cfmhkrs05vzvkrgg0st84zts','Minswap delegation HAPPY','2023-11-24 12:00:00');
+-- insert into pool (`ticker`, `name`, `bech32`, `created_at`) values ('MTERA','MeteraProtocol ISPO','pool1uct8k7ruvu3dgl9hws4pj3tk9stzpls4evnys4r8q5vj2p9w92w','2023-11-24 12:00:00');
+
+-- insert into blacklist (`stake_address`, `reason`, `created_at`) values ('stake1uyty3f2syg0tg5l0q7ufjtcj4g4d9cfmhkrs05vzvkrgg0st84zts','Minswap delegation HAPPY','2023-11-24 12:00:00');
+-- insert into blacklist (`stake_address`, `reason`, `created_at`) values ('stake1u8ruevjwus9g279fhhuvh470ynurclseyu55wqfqxh6grusydrp2z','IOG Delegation','2023-11-24 12:00:00');
