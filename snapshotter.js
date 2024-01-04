@@ -8,8 +8,7 @@ import { program } from "commander";
 
 sqlite3.verbose();
 
-const koiosApiKey =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRyIjoic3Rha2UxdXhlZXFoZWFlZjY3Y2o3YWdxenNqbGphZTA2eWVsZjA4Zjg2dmU2cXBodTA1N2M0czB2MGciLCJleHAiOjE3MzM4NDIzMzEsInRpZXIiOjEsInByb2pJRCI6IklTUE8ifQ.ED1_1ktNZiceQDhDc0OAZ_-c_pSbk8I9zSHdkB3cxcw";
+const koiosApiKey = "";
 const koiosBaseUrl = "https://api.koios.rest/api/v1";
 const axiosRL = rateLimit(axios.create(), { maxRPS: 8 });
 let currentEpoch = null;
